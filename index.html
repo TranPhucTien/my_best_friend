@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy eid mubarak</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+    <header id="header">
+        <a href="" class="logo">Tien</a>
+        <div class="toggle"></div>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="./assets/img/stars.png" alt="" id="stars">
+        <img src="./assets/img/stars2.png" alt="" id="stars2">
+        <img src="./assets/img/moon.png" alt="" id="moon">
+        <h2 id="text">Eid Mubarak</h2>
+        <img src="./assets/img/rock.png" alt="" id="rock">
+        <img src="./assets/img/masjid.png" alt="" id="masjid">
+        <img src="./assets/img/bottom.png" alt="" id="bottom">
+        <img src="./assets/img/lamp.png" alt="" id="lamp">
+    </section>
+
+    <div class="sec">
+        <h2>Happy eid mubarak to you and your family.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusamus rem, laboriosam officia minima, animi molestiae totam perspiciatis nisi tempore, corporis eligendi reprehenderit recusandae mollitia ipsam quisquam accusantium inventore earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusamus rem, laboriosam officia minima, animi molestiae totam perspiciatis nisi tempore, corporis eligendi reprehenderit recusandae mollitia ipsam quisquam accusantium inventore earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusamus rem, laboriosam officia minima, animi molestiae totam perspiciatis nisi tempore, corporis eligendi reprehenderit recusandae mollitia ipsam quisquam accusantium inventore earum! <br> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusamus rem, laboriosam officia minima, animi molestiae totam perspiciatis nisi tempore, corporis eligendi reprehenderit recusandae mollitia ipsam quisquam accusantium inventore earum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusamus rem, laboriosam officia minima, animi molestiae totam perspiciatis nisi tempore, corporis eligendi reprehenderit recusandae mollitia ipsam quisquam accusantium inventore earum! <br> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusamus rem, laboriosam officia minima, animi molestiae totam perspiciatis nisi tempore, corporis eligendi reprehenderit recusandae mollitia ipsam quisquam accusantium inventore earum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusamus rem, laboriosam officia minima, animi molestiae totam perspiciatis nisi tempore, corporis eligendi reprehenderit recusandae mollitia ipsam quisquam accusantium inventore earum!</p>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let stars2 = document.getElementById('stars2');
+        let masjid = document.getElementById('masjid');
+        let moon = document.getElementById('moon');
+        let rock = document.getElementById('rock');
+        let text = document.getElementById('text');
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY
+            stars.style.bottom = value * 0.05  +'%';
+            stars2.style.bottom = value * 0.05  +'%';
+            moon.style.bottom = value * -0.5  +'px';
+            rock.style.bottom = value * -0.75  +'px';
+            masjid.style.bottom = value * -0.15  +'px';
+            text.style.right = -90 + value * 0.5  +'%';
+            text.style.top = 50 + value * 0.1  +'%';
+            header.style.top = value * 0.5  +'px';
+        })
+
+        const toggleMenu =  document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+
+        toggleMenu.onclick = function() {
+            toggleMenu.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
