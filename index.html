@@ -1,37 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy eid mubarak</title>
+    <title>My Best Friend</title>
     <link rel="stylesheet" href="./assets/styles.css">
 </head>
+
 <body>
     <header id="header">
-        <a href="" class="logo">Tien</a>
+        <a href="" class="logo">Chào cậu</a>
         <div class="toggle"></div>
         <ul class="navigation">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Schedule</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="active">Happy</a></li>
+            <li><a href="#">Birthday</a></li>
+            <li><a href="#">My</a></li>
+            <li><a href="#">Best</a></li>
+            <li><a href="#">Friend</a></li>
         </ul>
     </header>
     <section>
         <img src="./assets/img/stars.png" alt="" id="stars">
         <img src="./assets/img/stars2.png" alt="" id="stars2">
         <img src="./assets/img/moon.png" alt="" id="moon">
-        <h2 id="text">Eid Mubarak</h2>
+        <h2 id="text">Happy Birthday My Best Friend</h2>
+        <a href="#" id="btn" class="button-play">click me</a>
         <img src="./assets/img/rock.png" alt="" id="rock">
         <img src="./assets/img/masjid.png" alt="" id="masjid">
         <img src="./assets/img/bottom.png" alt="" id="bottom">
         <img src="./assets/img/lamp.png" alt="" id="lamp">
+        <div class="music">
+            <audio src="./assets/music/HappyBirthday-PhanDinhTung_uwaw.mp3" autoplay controls
+                class="music-hppd"></audio>
+        </div>
     </section>
 
     <div class="sec">
-        <h2>Happy eid mubarak to you and your family.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusamus rem, laboriosam officia minima, animi molestiae totam perspiciatis nisi tempore, corporis eligendi reprehenderit recusandae mollitia ipsam quisquam accusantium inventore earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusamus rem, laboriosam officia minima, animi molestiae totam perspiciatis nisi tempore, corporis eligendi reprehenderit recusandae mollitia ipsam quisquam accusantium inventore earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusamus rem, laboriosam officia minima, animi molestiae totam perspiciatis nisi tempore, corporis eligendi reprehenderit recusandae mollitia ipsam quisquam accusantium inventore earum! <br> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusamus rem, laboriosam officia minima, animi molestiae totam perspiciatis nisi tempore, corporis eligendi reprehenderit recusandae mollitia ipsam quisquam accusantium inventore earum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusamus rem, laboriosam officia minima, animi molestiae totam perspiciatis nisi tempore, corporis eligendi reprehenderit recusandae mollitia ipsam quisquam accusantium inventore earum! <br> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusamus rem, laboriosam officia minima, animi molestiae totam perspiciatis nisi tempore, corporis eligendi reprehenderit recusandae mollitia ipsam quisquam accusantium inventore earum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusamus rem, laboriosam officia minima, animi molestiae totam perspiciatis nisi tempore, corporis eligendi reprehenderit recusandae mollitia ipsam quisquam accusantium inventore earum!</p>
+        <h2 class="animation__easy-top">Sinh nhật vui vẻ nhé</h2>
+        <h2>
+            <a href="https://www.facebook.com/profile.php?id=100011176875961" class="animate__charcter">
+                <b>
+                    Nguyễn Thị Hồng Nhung
+                </b>
+            </a>
+        </h2>
+        <div class="content">
+            <img src="./assets/img/1.jpg" alt="Đây là ảnh một bạn rất xinh tiếc là máy ông không tải được ảnh này"
+                class="content__img">
+            <img src="./assets/img/2.jpg" alt="Đây là ảnh một bạn rất xinh tiếc là máy ông không tải được ảnh này"
+                class="content__img">
+            <img src="./assets/img/3.jpg" alt="Đây là ảnh một bạn rất xinh tiếc là máy ông không tải được ảnh này"
+                class="content__img">
+            <img src="./assets/img/4.jpg" alt="Đây là ảnh một bạn rất xinh tiếc là máy ông không tải được ảnh này"
+                class="content__img">
+            <img src="./assets/img/5.jpg" alt="Đây là ảnh một bạn rất xinh tiếc là máy ông không tải được ảnh này"
+                class="content__img">
+            <img src="./assets/img/6.jpg" alt="Đây là ảnh một bạn rất xinh tiếc là máy ông không tải được ảnh này"
+                class="content__img">
+            <img src="./assets/img/7.jpg" alt="Đây là ảnh một bạn rất xinh tiếc là máy ông không tải được ảnh này"
+                class="content__img">
+            <img src="./assets/img/8.jpg" alt="Đây là ảnh một bạn rất xinh tiếc là máy ông không tải được ảnh này"
+                class="content__img content__img-right">
+        </div>
+
+        <div class="text__center">
+            <h2>
+                <b>
+                    Hết mất rồi
+                    <img src="./assets/fonts/face_white_24dp.svg" alt="Day chi la icon thoi" class="fonts">
+                    <img src="./assets/fonts/face_white_24dp.svg" alt="Day chi la icon thoi" class="fonts">
+                    <img src="./assets/fonts/face_white_24dp.svg" alt="Day chi la icon thoi" class="fonts">
+                </b>
+            </h2>
+        </div>
     </div>
 
     <script>
@@ -43,25 +86,101 @@
         let text = document.getElementById('text');
         let header = document.getElementById('header');
 
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             let value = window.scrollY
-            stars.style.bottom = value * 0.05  +'%';
-            stars2.style.bottom = value * 0.05  +'%';
-            moon.style.bottom = value * -0.5  +'px';
-            rock.style.bottom = value * -0.75  +'px';
-            masjid.style.bottom = value * -0.15  +'px';
-            text.style.right = -90 + value * 0.5  +'%';
-            text.style.top = 50 + value * 0.1  +'%';
-            header.style.top = value * 0.5  +'px';
+            stars.style.bottom = value * 0.05 + '%';
+            stars2.style.bottom = value * 0.05 + '%';
+            moon.style.bottom = value * -0.5 + 'px';
+            rock.style.bottom = value * -0.5 + 'px';
+            masjid.style.bottom = value * -0.15 + 'px';
+            text.style.right = -90 + value * 0.5 + '%';
+            text.style.top = 50 + value * 0.1 + '%';
+            header.style.top = value * 0.5 + 'px';
         })
 
-        const toggleMenu =  document.querySelector('.toggle');
+        const toggleMenu = document.querySelector('.toggle');
         const navigation = document.querySelector('.navigation');
 
-        toggleMenu.onclick = function() {
+        toggleMenu.onclick = function () {
             toggleMenu.classList.toggle('active')
             navigation.classList.toggle('active')
         }
     </script>
+
+    <script src="./assets/anime.min.js"></script>
+
+    <script>
+        var animation = anime.timeline({
+            autoplay: false
+        });
+
+        animation
+            .add({
+                targets: '#btn',
+                top: '1500px',
+                duration: 500,
+                easing: 'easeInOutSine',
+            })
+
+            .add({
+                targets: '#stars',
+                top: '0px',
+                duration: 1000,
+                easing: 'easeInOutSine',
+            })
+
+            .add({
+                targets: '#stars2',
+                top: '0px',
+                duration: 500,
+                easing: 'easeInOutSine',
+            })
+
+            .add({
+                targets: '#bottom',
+                bottom: '0px',
+                duration: 700,
+                easing: 'easeInOutSine',
+            })
+
+            .add({
+                targets: '#rock',
+                bottom: '0px',
+                duration: 1000,
+                easing: 'easeInOutSine',
+            })
+
+            .add({
+                targets: '#masjid',
+                bottom: '0px',
+                duration: 700,
+                easing: 'easeInOutBack',
+            })
+
+            .add({
+                targets: '#moon',
+                bottom: '0px',
+                duration: 700,
+                easing: 'easeInOutBack',
+            })
+
+            .add({
+                targets: '#lamp',
+                bottom: '0px',
+                duration: 500,
+                easing: 'easeInOutBack',
+            })
+
+            .add({
+                targets: '#header',
+                top: '0px',
+                duration: 700,
+                easing: 'easeInOutBack',
+            })
+
+        document.querySelector('#btn').onclick = animation.play;
+    </script>
+
 </body>
+
 </html>
